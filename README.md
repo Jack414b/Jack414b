@@ -1,6 +1,5 @@
-- 👋 Hi, I’m @Jack414b
-- 👀 I’m interested in EE
-- 📫 How to reach me :NJU
+- 👋 Hi, I’m Jack
+- 👀 studying in NJU EE2022
 
 
 <!---
