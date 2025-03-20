@@ -1,5 +1,5 @@
 - 👋 Hi, I’m Jack
-- 👀 studying in NJU EE2022
+- 👀 Studying in NJU EE2022
 
 
 <!---
