@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiale</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-card: #fafafa;
+      --text: #2d2d2d;
+      --text-muted: #6c6c6c;
+      --border: #e0e0e0;
+      --accent: #555555;
+      --accent-hover: #333333;
+      --badge-bg: #f0f0f0;
+    }
+
+    html[data-theme="dark"] {
+      --bg: #1a1a1a;
+      --bg-card: #242424;
+      --text: #d4d4d4;
+      --text-muted: #999999;
+      --border: #333333;
+      --accent: #999999;
+      --accent-hover: #bbbbbb;
+      --badge-bg: #2a2a2a;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    header img[alt="typing"] {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .tagline {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-top: 8px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .about p {
+      margin-bottom: 12px;
+    }
+    .about p:last-child { margin-bottom: 0; }
+
+    .edu-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .edu-table td {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .edu-table tr:last-child td { border-bottom: none; }
+    .edu-table .school { font-weight: 600; }
+    .edu-table .status { text-align: right; color: var(--text-muted); }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .badges img {
+      height: 27px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 600px) {
+      .projects { grid-template-columns: 1fr; }
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .project-card h3 {
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+    .project-card p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--badge-bg);
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      padding: 2px 10px;
+      border-radius: 12px;
+    }
+
+    .stats {
+      text-align: center;
+    }
+    .stats img {
+      max-width: 100%;
+      margin: 8px 0;
+    }
+
+    .contact {
+      text-align: center;
+      color: var(--text-muted);
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .contact a:hover {
+      color: var(--accent-hover);
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    #theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      color: var(--text);
+      cursor: pointer;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    #theme-toggle:hover { background: var(--badge-bg); }
+  </style>
+</head>
+<body>
+
+<button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">🌓</button>
+
+<header>
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&duration=4000&pause=1000&color=555555&center=true&vCenter=true&random=false&width=600&lines=Hi%2C+I'm+Jiale+%F0%9F%91%8B;Computer+Vision;Multi-modal+AI;NeRF+%26+3DGS;Embodied+AI" alt="typing" />
+  </a>
+  <p class="tagline">📍 Nanjing / Singapore &nbsp;·&nbsp; 📧 JIALE010@e.ntu.edu.sg</p>
+</header>
+
+<section class="about">
+  <h2>👨‍💻 About Me</h2>
+  <div class="card">
+    <p>
+      Undergraduate senior at <strong>Nanjing University</strong> (南京大学), School of Electronic Science &amp; Engineering. Incoming graduate student at <strong>Nanyang Technological University</strong> (NTU), School of EEE.
+    </p>
+    <p>
+      Research interests span <strong>Computer Vision</strong>, <strong>Multi-modal Learning</strong>, <strong>Large Language Models</strong>, and <strong>Embodied AI</strong>.
+    </p>
+    <p>
+      Currently exploring <strong>NeRF</strong> and <strong>3D Gaussian Splatting</strong> (3DGS) for autonomous driving applications.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>🎓 Education</h2>
+  <div class="card">
+    <table class="edu-table">
+      <tr>
+        <td class="school">Nanyang Technological University</td>
+        <td class="status">M.Sc. EEE · Incoming</td>
+      </tr>
+      <tr>
+        <td class="school">Nanjing University (南京大学)</td>
+        <td class="status">B.Eng. · Senior Year</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>🛠️ Tech Stack</h2>
+  <div class="card">
+    <div class="badges">
+      <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" alt="C">
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+      <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch">
+      <img src="https://img.shields.io/badge/ROS-22314E?style=flat-square&logo=ros&logoColor=white" alt="ROS">
+      <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux">
+      <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git">
+      <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+      <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🚀 Featured Projects</h2>
+  <div class="projects">
+    <div class="project-card">
+      <h3>NeRF &amp; 3DGS Research</h3>
+      <p>Exploring Neural Radiance Fields and 3D Gaussian Splatting for autonomous driving scene reconstruction.</p>
+      <span class="badge">In Progress</span>
+    </div>
+    <div class="project-card">
+      <h3>Multi-modal Learning</h3>
+      <p>Research on vision-language models and cross-modal understanding.</p>
+      <span class="badge">In Progress</span>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <h2>📊 GitHub Stats</h2>
+  <img src="https://github-readme-stats.vercel.app/api?username=Jack414b&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jack414b&layout=compact&hide_border=true&theme=default" alt="Top Languages">
+</section>
+
+<hr class="divider">
+
+<section class="contact">
+  <p>
+    <a href="mailto:JIALE010@e.ntu.edu.sg">📧 Email</a>
+    &nbsp;·&nbsp;
+    <a href="https://github.com/Jack414b">💻 GitHub</a>
+  </p>
+</section>
+
+<footer>
+  <p>Last updated: May 2025</p>
+</footer>
+
+<script>
+  function toggleTheme() {
+    const html = document.documentElement;
+    const current = html.getAttribute("data-theme");
+    html.setAttribute("data-theme", current === "dark" ? "light" : "dark");
+  }
+</script>
+
+</body>
+</html>
