@@ -17,8 +17,8 @@ profile:
     <p>📧 JIALE010@e.ntu.edu.sg</p>
     <p>📍 Nanjing / Singapore</p>
 
-news: true
-selected_papers: true
+news: false
+selected_papers: false
 social: true
 ---
 
