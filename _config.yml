@@ -8,7 +8,7 @@ middle_name:
 last_name:
 email: JIALE010@e.ntu.edu.sg
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Feel free to reach out via email for collaboration or inquiries.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Undergraduate senior at Nanjing University, incoming graduate student at NTU.
   Research interests: Computer Vision, Multi-modal AI, NeRF & 3DGS, Embodied AI.
@@ -93,8 +93,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Jiale # blog_name will be displayed in your blog page
+blog_description: Academic homepage of Jiale
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -283,8 +283,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Jiale]
+  first_name: []
 
   style: apa
   locale: en
