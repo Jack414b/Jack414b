@@ -1,0 +1,11 @@
+header:
+  - title: Home
+    url: /
+  - title: News
+    url: /news/
+  - title: Publications
+    url: /publications/
+  - title: Projects
+    url: /projects/
+  - title: CV
+    url: /cv/

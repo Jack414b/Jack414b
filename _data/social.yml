@@ -1,0 +1,9 @@
+- title: Email
+  url: mailto:JIALE010@e.ntu.edu.sg
+  icon: fas fa-envelope
+- title: GitHub
+  url: https://github.com/Jack414b
+  icon: fab fa-github
+- title: Google Scholar
+  url: https://scholar.google.com/citations?user=YOUR_ID
+  icon: fas fa-graduation-cap
