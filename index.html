@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jiale</title>
   <style>
     :root {
+      --bg: #121212;
+      --bg-card: #1e1e1e;
+      --text: #d4d4d4;
+      --text-muted: #999999;
+      --border: #333333;
+      --accent: #aaaaaa;
+      --accent-hover: #cccccc;
+      --badge-bg: #2a2a2a;
+    }
+
+    html[data-theme="light"] {
       --bg: #ffffff;
       --bg-card: #fafafa;
       --text: #2d2d2d;
@@ -14,17 +25,6 @@
       --accent: #555555;
       --accent-hover: #333333;
       --badge-bg: #f0f0f0;
-    }
-
-    html[data-theme="dark"] {
-      --bg: #1a1a1a;
-      --bg-card: #242424;
-      --text: #d4d4d4;
-      --text-muted: #999999;
-      --border: #333333;
-      --accent: #999999;
-      --accent-hover: #bbbbbb;
-      --badge-bg: #2a2a2a;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -42,6 +42,15 @@
     header {
       text-align: center;
       margin-bottom: 48px;
+    }
+
+    .profile-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--border);
+      margin-bottom: 20px;
     }
 
     header img[alt="typing"] {
@@ -134,14 +143,6 @@
       border-radius: 12px;
     }
 
-    .stats {
-      text-align: center;
-    }
-    .stats img {
-      max-width: 100%;
-      margin: 8px 0;
-    }
-
     .contact {
       text-align: center;
       color: var(--text-muted);
@@ -191,8 +192,9 @@
 <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">🌓</button>
 
 <header>
+  <img src="assets/img/photo.png" alt="Jiale" class="profile-photo" />
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&duration=4000&pause=1000&color=555555&center=true&vCenter=true&random=false&width=600&lines=Hi%2C+I'm+Jiale+%F0%9F%91%8B;Computer+Vision;Multi-modal+AI;NeRF+%26+3DGS;Embodied+AI" alt="typing" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=28&duration=4000&pause=1000&color=aaaaaa&center=true&vCenter=true&random=false&width=600&lines=Hi%2C+I'm+Jiale+%F0%9F%91%8B;Computer+Vision;Multi-modal+AI;NeRF+%26+3DGS;Embodied+AI" alt="typing" />
   </a>
   <p class="tagline">📍 Nanjing / Singapore &nbsp;·&nbsp; 📧 JIALE010@e.ntu.edu.sg</p>
 </header>
@@ -258,12 +260,6 @@
       <span class="badge">In Progress</span>
     </div>
   </div>
-</section>
-
-<section class="stats">
-  <h2>📊 GitHub Stats</h2>
-  <img src="https://github-readme-stats.vercel.app/api?username=Jack414b&show_icons=true&theme=default&hide_border=true&count_private=true" alt="GitHub Stats">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jack414b&layout=compact&hide_border=true&theme=default" alt="Top Languages">
 </section>
 
 <hr class="divider">
